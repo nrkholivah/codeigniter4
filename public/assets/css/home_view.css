@@ -1,0 +1,70 @@
+/* home_view.css */
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4; /* Latar belakang halaman */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333; /* Warna judul utama */
+}
+
+h2 {
+    color: #007BFF; /* Warna untuk subjudul */
+    border-bottom: 2px solid #007BFF; /* Garis bawah untuk subjudul */
+    padding-bottom: 5px; /* Padding bawah untuk subjudul */
+}
+
+section {
+    background-color: white; /* Latar belakang section */
+    padding: 15px; /* Padding di dalam section */
+    margin: 10px 0; /* Margin atas dan bawah section */
+    border-radius: 5px; /* Sudut melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+ul, ol {
+    margin-left: 20px; /* Margin kiri untuk daftar */
+}
+
+ul li {
+    color:#007BFF; 
+    /* Mengatur warna tulisan mata kuliah menjadi hitam */
+}
+
+ul li a{
+    text-decoration: none; 
+    color: #333;
+}
+
+button {
+    background-color: #007BFF; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border default */
+    padding: 10px 15px; /* Padding di dalam tombol */
+    border-radius: 5px; /* Sudut melengkung tombol */
+    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+}
+
+button a {
+    color: white; /* Warna teks tautan di dalam tombol */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+}
+
+button:hover {
+    background-color: #0056b3; /* Warna latar belakang tombol saat hover */
+}
+
+footer {
+    text-align: center; /* Pusatkan teks footer */
+    margin-top: 20px; /* Margin atas untuk footer */
+    font-size: 0.9em; /* Ukuran font untuk footer */
+    color: #666; /* Warna teks footer */
+}
