@@ -2,27 +2,29 @@
 
 namespace App\Controllers;
 
-class MataKuliah extends BaseController
+use App\Models\mkModel;
+
+class  MataKuliah extends BaseController
 {
+    public function __construct()
+    {
+        helper('url'); // Sekali load untuk seluruh method
+    }
     public function home(): string
     {
-        helper('url');
-        return view('matakuliah/home');
+        $courseModel = new mkModel();
+        $data['courses'] = $courseModel->findAll(); //buat nampilin model
+        return view('matakuliah_view/home',  $data);
     }
-    public function pemweb()
+    public function matkul($id): string
     {
-        return view('matakuliah/pemweb');
-    }
-    public function rpl()
-    {
-        return view('matakuliah/rpl');
-    }
-    public function sim()
-    {
-        return view('matakuliah/sim');
-    }
-    public function metopen()
-    {
-        return view('matakuliah/metopen');
+        $courseModel = new mkModel();
+        $data['courses'] = $courseModel->findAll();
+        $data['matkul'] = $courseModel->find($id); // <- ini penting
+
+        if (!$data['matkul']) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException("Mata Kuliah Tidak Ditemukan");
+        }
+        return view('index_matakuliah', $data); // <- ini juga
     }
 }

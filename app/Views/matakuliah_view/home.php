@@ -53,38 +53,15 @@
     <section class="about">
         <h3>Mata Kuliah</h3>
         <div class="features">
-            <div class="feature">
-                <a href="/rpl">
-                    <img src="img/rpl.jpeg" alt="Rekayasa Perangkat Lunak Icon">
-                    <h4>Rekayasa Perangkat Lunak</h4>
-                </a>
-                <p>We have a reliable and experienced team.</p>
-            </div>
-            <div class="feature">
-                <img src="img/mbd.jpeg" alt="Manajemen Basis Data Icon">
-                <h4>Manajemen Basis Data</h4>
-                <p>Our creative team will bring your ideas to life.</p>
-            </div>
-            <div class="feature">
-                <img src="img/sim.jpeg" alt="Sistem Informasi Manajemen Icon">
-                <h4>Sistem Informasi Manajemen</h4>
-                <p>We create your app and website tailored to your needs.</p>
-            </div>
-            <div class="feature">
-                <img src="img/metopen.jpeg" alt="Metodologi Penelitian SI Icon">
-                <h4>Metodologi Penelitian SI</h4>
-                <p>We create your app and website tailored to your needs.</p>
-            </div>
-            <div class="feature">
-                <img src="img/pemweb.jpg" alt="Pemrograman Website 2 Icon">
-                <h4>Pemrograman Website 2</h4>
-                <p>We create your app and website tailored to your needs.</p>
-            </div>
-            <div class="feature">
-                <img src="img/Visualisasi.jpg" alt="Visualisasi Data dan Informasi Icon">
-                <h4>Visualisasi Data dan Informasi</h4>
-                <p>We create your app and website tailored to your needs.</p>
-            </div>
+            <?php foreach ($courses as $course): ?>
+                <div class="feature">
+                    <a href="<?= base_url('profil/matkul/' . $course['id']) ?>">
+                        <img src="<?= base_url('assets/gambar/' . $course['gambar']) ?>" alt="<?= esc($course['nama_kelas']) ?>">
+                        <h4><?= esc($course['nama_kelas']) ?></h4>
+                    </a>
+                    <p><?= esc($course['deskripsi']) ?></p>
+                </div>
+            <?php endforeach; ?>
         </div>
     </section>
 
