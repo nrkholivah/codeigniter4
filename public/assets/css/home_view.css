@@ -1,70 +1,214 @@
-/* home_view.css */
 .body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4; /* Latar belakang halaman */
+   
+    background-color: #f3f4f6;
 }
 
 header {
+    background-color: #262626;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center; 
+    margin: 0; 
+    padding: 0; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #007BFF; 
+    color: white;
     text-align: center;
-    margin-bottom: 20px;
+    padding: 40px 20px;
+    display: flex;
+}
+.hero_kanan {
+width: 70%;
+text-align: center;
+}
+.hero_kiri{
+width: 30%;
+flex: auto;
 }
 
-h1 {
-    color: #333; /* Warna judul utama */
+.about {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #007BFF; /* Warna untuk subjudul */
-    border-bottom: 2px solid #007BFF; /* Garis bawah untuk subjudul */
-    padding-bottom: 5px; /* Padding bawah untuk subjudul */
+/* Heading Styles */
+.about h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
 }
 
-section {
-    background-color: white; /* Latar belakang section */
-    padding: 15px; /* Padding di dalam section */
-    margin: 10px 0; /* Margin atas dan bawah section */
-    border-radius: 5px; /* Sudut melengkung */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+/* Features Container */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-ul, ol {
-    margin-left: 20px; /* Margin kiri untuk daftar */
+/* Feature Item Styles */
+.feature {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    width: calc(30% - 20px); /* Three items per row with spacing */
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+
 }
 
-ul li {
-    color:#007BFF; 
-    /* Mengatur warna tulisan mata kuliah menjadi hitam */
+.feature:hover {
+    transform: translateY(-5px);
 }
 
-ul li a{
-    text-decoration: none; 
+/* Image Styles */
+.feature img {
+    width: 80px; /* Adjust icon size */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Heading and Paragraph Styles */
+.feature h4 {
+    color: #007bff; /* Bootstrap Primary Color */
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #555;
+    font-size: 14px;
+}
+ .feature a{
+    text-decoration: none;
+ }
+/*komtak*/
+.contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.contact h3 {
+    font-size: 1.5em;
     color: #333;
 }
 
-button {
-    background-color: #007BFF; /* Warna latar belakang tombol */
-    color: white; /* Warna teks tombol */
-    border: none; /* Menghilangkan border default */
-    padding: 10px 15px; /* Padding di dalam tombol */
-    border-radius: 5px; /* Sudut melengkung tombol */
-    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
-    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+.contact p {
+    font-size: 1em;
+    color: #666;
 }
 
-button a {
-    color: white; /* Warna teks tautan di dalam tombol */
-    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Change from block to flex */
+    justify-content: center; /* Adjusts alignment */
+}
+
+.contact ul li {
+    margin: 10px; /* Adjust margin for horizontal spacing */
+}
+
+.contact a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: #0056b3;
+}
+.contact {
+    background-color: #f7f9fc; /* Light background for contrast */
+    padding: 20px; /* Add padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Limit width */
+    margin: auto; /* Center form */
+}
+
+h3 {
+    text-align: center; /* Center the header */
+    color: #333; /* Dark text color */
+}
+
+label {
+    font-weight: bold; /* Bold labels */
+    color: #555; /* Slightly lighter color */
+    display: block; /* Set labels to block for better spacing */
+    margin: 10px 0 5px; /* Spacing around labels */
+}
+
+input[type="text"],
+select {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding for better touch area */
+    margin-bottom: 15px; /* Space below inputs */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light gray border */
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* White text color */
+    padding: 12px; /* Padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    width: 100%; /* Full width button */
+    transition: background-color 0.3s; /* Smooth background color change */
 }
 
 button:hover {
-    background-color: #0056b3; /* Warna latar belakang tombol saat hover */
+    background-color: #0056b3; /* Darker color on hover */
+}
+.ikuti_saya p{
+ text-align: center;
 }
 
 footer {
-    text-align: center; /* Pusatkan teks footer */
-    margin-top: 20px; /* Margin atas untuk footer */
-    font-size: 0.9em; /* Ukuran font untuk footer */
-    color: #666; /* Warna teks footer */
+    background-color: #007BFF; 
+    color: white;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+.container p{
+    text-align: center;
+}
+.container_footer{
+    text-align: center;
 }

@@ -1,0 +1,42 @@
+/* home_view.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Latar belakang halaman */
+}
+
+section {
+    background-color: white; /* Latar belakang section */
+    padding: 20px;
+    margin: 20px auto; /* Margin otomatis untuk pusat */
+    border: 1px solid #ddd; /* Border untuk section */
+    border-radius: 5px; /* Sudut melengkung */
+    max-width: 800px; /* Lebar maksimum section */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+h2 {
+    color: #007BFF; /* Warna biru untuk judul */
+    border-bottom: 2px solid #007BFF; /* Garis bawah untuk judul */
+    padding-bottom: 10px; /* Padding bawah untuk judul */
+}
+
+ul {
+    list-style-type: disc; /* Jenis daftar */
+    margin-left: 20px; /* Margin kiri untuk daftar */
+}
+
+a {
+    color: #007BFF; /* Warna biru untuk tautan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+strong {
+    color: #333; /* Warna untuk teks tebal */
+}

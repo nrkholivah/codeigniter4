@@ -26,7 +26,7 @@
 
     <section id="dosen">
         <h2>Informasi Dosen</h2>
-        <p><strong>Nama Dosen:</strong> Ibu Siti Aminah, S.Kom, M.Kom <br>
+        <p><strong>Nama Dosen:</strong>Pak Miftah & Pak Fajrul<br>
             <strong>Kontak:</strong> <a href="mailto:siti.aminah@university.edu">siti.aminah@university.edu</a>
         </p>
     </section>
