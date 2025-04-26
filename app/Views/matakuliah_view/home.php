@@ -55,11 +55,10 @@
         <div class="features">
             <?php foreach ($courses as $course): ?>
                 <div class="feature">
-                    <a href="<?= base_url('profil/matkul/' . $course['id']) ?>">
-                        <img src="<?= base_url('assets/gambar/' . $course['gambar']) ?>" alt="<?= esc($course['nama_kelas']) ?>">
+                    <a href="<?= base_url('index_matakuliah/' . $course['id']) ?>">
+                        <img src="<?= base_url('gambar/' . $course['gambar']) ?>" alt="<?= esc($course['nama_kelas']) ?>">
                         <h4><?= esc($course['nama_kelas']) ?></h4>
                     </a>
-                    <p><?= esc($course['deskripsi']) ?></p>
                 </div>
             <?php endforeach; ?>
         </div>

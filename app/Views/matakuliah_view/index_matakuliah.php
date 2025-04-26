@@ -11,23 +11,22 @@
 <body>
     <section id="deskripsi">
         <h2>Deskripsi</h2>
-        <p>Mata kuliah Pemrograman Website membahas teknik dan praktik dalam pengembangan aplikasi web. Mahasiswa akan mempelajari HTML, CSS, JavaScript, serta framework dan alat pengembangan web lainnya.</p>
-        <p>Durasi: 1 Semester <br>Jadwal: Senin, 09.00-11.00 <br><a href="https://classroom.google.com/c/NzU0NTY3MzAzODMw">Classroom PW</a></p>
+        <p><?= esc($matkul['deskripsi']) ?></p>
+        <p>Durasi: 1 Semester <br>Jadwal: Senin, 09.00-11.00 <br><a href="https://classroom.google.com/c/NzU0NTY3MzAzODMw">Classroom</a></p>
     </section>
 
     <section id="hasil-pembelajaran">
         <h2>Hasil Pembelajaran</h2>
         <ul>
-            <li>Memahami dasar-dasar pemrograman web.</li>
-            <li>Mampu merancang dan mengembangkan aplikasi web interaktif.</li>
-            <li>Mengetahui teknik pengujian dan debugging aplikasi web.</li>
+            <?php foreach (explode("\n", $matkul['hasil_pembelajaran']) as $hasil): ?>
+                <li><?= esc($hasil) ?></li>
+            <?php endforeach; ?>
         </ul>
     </section>
 
     <section id="dosen">
         <h2>Informasi Dosen</h2>
-        <p><strong>Nama Dosen:</strong>Pak Miftah & Pak Fajrul<br>
-            <strong>Kontak:</strong> <a href="mailto:siti.aminah@university.edu">siti.aminah@university.edu</a>
+        <p><?= esc($matkul['informasi_dosen']) ?>
         </p>
     </section>
 </body>

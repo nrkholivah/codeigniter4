@@ -5,8 +5,11 @@
 }
 
 header {
-    background-color: #262626;
+    background-color: #666;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .container {
@@ -32,7 +35,7 @@ nav a {
 }
 
 .hero {
-    background-color: #007BFF; 
+    background-color: #67819d; 
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -141,7 +144,7 @@ flex: auto;
 }
 
 .contact a:hover {
-    color: #0056b3;
+    color:#67819d;
 }
 .contact {
     background-color: #f7f9fc; /* Light background for contrast */
@@ -182,7 +185,7 @@ select:focus {
 }
 
 button {
-    background-color: #007bff; /* Primary button color */
+    background-color:#67819d;; /* Primary button color */
     color: white; /* White text color */
     padding: 12px; /* Padding */
     border: none; /* Remove border */
@@ -193,14 +196,14 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Darker color on hover */
+    background-color:#67819d;; /* Darker color on hover */
 }
 .ikuti_saya p{
  text-align: center;
 }
 
 footer {
-    background-color: #007BFF; 
+    background-color:#67819d;; 
     color: white;
     text-align: center;
     position: relative;

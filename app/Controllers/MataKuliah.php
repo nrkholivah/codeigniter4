@@ -25,6 +25,6 @@ class  MataKuliah extends BaseController
         if (!$data['matkul']) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException("Mata Kuliah Tidak Ditemukan");
         }
-        return view('index_matakuliah', $data); // <- ini juga
+        return view('matakuliah_view/index_matakuliah', $data); // <- ini juga
     }
 }
