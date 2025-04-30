@@ -1,5 +1,5 @@
 /* home_view.css */
-body {
+.body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -15,6 +15,12 @@ section {
     border-radius: 5px; /* Sudut melengkung */
     max-width: 800px; /* Lebar maksimum section */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+.h1{
+
+    text-align: center;
+    text-decoration: #007BFF;
 }
 
 h2 {

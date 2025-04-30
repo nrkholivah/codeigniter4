@@ -9,10 +9,15 @@
 </head>
 
 <body>
-    <section id="deskripsi">
+    <section id="deskripsi" >
+        <h1>
+            <p><?= esc($matkul['nama_kelas']) ?></p>
+        </h1>
         <h2>Deskripsi</h2>
         <p><?= esc($matkul['deskripsi']) ?></p>
-        <p>Durasi: 1 Semester <br>Jadwal: Senin, 09.00-11.00 <br><a href="https://classroom.google.com/c/NzU0NTY3MzAzODMw">Classroom</a></p>
+        <p>Durasi: 1 Semester <br>Jadwal: Senin, 09.00-11.00 <br>
+            <a href="<?= esc($matkul['link_cr']) ?>" target="_blank">Classroom</a> |
+            <a href="<?= esc($matkul['link_wa']) ?>" target="_blank">WhatsApp Group</a>
     </section>
 
     <section id="hasil-pembelajaran">

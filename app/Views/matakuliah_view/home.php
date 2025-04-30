@@ -12,46 +12,43 @@
 <body>
     <header>
         <div class="container">
-            <h1>Nur Kholivah</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#Hero">Portofolio</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#tentang_saya">Tentang Saya</a></li>
                     <li><a href="#about">Mata Kuliah</a></li>
                     <li><a href="#contact">Kontak</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
     <section class="hero" id="hero">
         <div class="hero_kiri">
-            <p>Portofolio</p>
-            <h2>Nur Kholivah</h2>
-            <p>Selamat datang di portofolio saya. Saya adalah mahasiswi jurusan Sistem Informasi yang memiliki minat dan keterampilan dalam desain, pemrograman, serta fotografi. Dengan latar belakang pendidikan saya, saya berkomitmen untuk menerapkan pengetahuan dan kreativitas saya dalam setiap proyek yang saya kerjakan, serta terus belajar dan berkembang di bidang teknologi informasi</p>
+            <img src="gambar/user.png" alt="">
         </div>
         <div class="hero_kanan">
-            <p>Skill saya</p>
+            <h1>Hello,<br> Saya Nur Kholivah</h1>
+            <h5>Mahasiswi Sistem Informasi</h5>
 
-            <div>
-                <strong>Figma, Canva</strong><br />
-
-            </div>
-
-            <div>
-                <strong> HTML, CSS, dan PHP</strong><br />
-
-            </div>
-
-            <div>
-                <strong>Microsoft Word dan Excel</strong><br />
-
-            </div>
         </div>
     </section>
-
+    <section class="tentang_saya" id="tentang_saya">
+        <div>
+            <h1>Tentang Saya</h1>
+            <p>
+                Saya Mahasiswi jurusan Sistem Informasi di Universitas Pesantren Tinggi Darul `Ulum Jombang
+                mampu secara individu maupun berkolaborasi dengan tim,
+                bekerja dengan cepat, <em><strong>Up to Date</strong></em>
+                terhadap perkembangan teknologi dan informasi, saat ini saya berusia 20 Tahun,
+                walaupun umur saya masih terbilang muda,
+                tapi saya sudah memiliki beberapa skill yang dapat di andalkan di era 4.0 masa ini,
+                <strong>UI UX Design, Program Office</strong>,
+                <!--<strong>Adobe Premiere Pro</strong> dan <strong>After Efect</strong>.-->
+            </p>
+        </div>
+    </section>
     <section class="about" id="about">
-        <h3>Mata Kuliah</h3>
+        <h1>Mata Kuliah</h1>
         <div class="features">
             <?php foreach ($courses as $course): ?>
                 <div class="feature">

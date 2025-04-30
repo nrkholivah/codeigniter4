@@ -1,11 +1,11 @@
 .body {
     font-family: Arial, sans-serif;
    
-    background-color: #f3f4f6;
+    background-color: #830f92;
 }
 
 header {
-    background-color: #666;
+    background-color: #73425f;
     color: white;
     position: sticky;
     top: 0;
@@ -23,7 +23,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 70px;
     justify-content: center; 
     margin: 0; 
     padding: 0; 
@@ -42,14 +42,24 @@ nav a {
     display: flex;
 }
 .hero_kanan {
-width: 70%;
+width: 50%;
 text-align: center;
 }
 .hero_kiri{
-width: 30%;
+width: 50%;
 flex: auto;
 }
 
+.tentang_saya{
+    padding: 40px;
+    border-radius: 8px;
+}
+.tentang_saya h1{
+text-align: center;
+text-decoration: #555;
+
+
+}
 .about {
     background-color: #ffffff;
     padding: 40px;
@@ -62,6 +72,9 @@ flex: auto;
     text-align: center;
     color: #333;
     margin-bottom: 30px;
+}
+.about h1{
+    text-align: center;
 }
 
 /* Features Container */
